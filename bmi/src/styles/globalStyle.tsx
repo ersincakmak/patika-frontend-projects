@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
       flex-direction: column;
       overflow: hidden;
       transition: background .2s ease;
+      background-color: ${(props) => props.theme.colors.bg};
     }
 `
 
