@@ -14,3 +14,16 @@ export const writeToLocalStorage = (data: Result) => {
     localStorage.setItem('bmi', JSON.stringify(array))
   }
 }
+
+export const getResultsFromLocalStorage = () => {
+  const lsData = localStorage.getItem('bmi')
+  const array = []
+  if (lsData) {
+    array.push(...JSON.parse(lsData))
+  }
+  return array
+}
+
+export const clearResultsFromLocalStorage = () => {
+  localStorage.removeItem('bmi')
+}

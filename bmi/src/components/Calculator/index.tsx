@@ -53,12 +53,13 @@ const Calculator = () => {
     },
     validationSchema: calculatorValidator,
     onSubmit: (values, formikHelpers) => {
-      setResult({
+      const calculatedValues = {
         bmi: calculateBmi(values.weight as number, values.height as number),
         name: values.name,
-      })
+      }
+      setResult(calculatedValues)
       setresultOpen(true)
-      writeToLocalStorage(result)
+      writeToLocalStorage(calculatedValues)
 
       ref.current?.parentElement?.scrollTo({
         behavior: 'smooth',
