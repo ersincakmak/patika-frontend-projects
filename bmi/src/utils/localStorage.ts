@@ -5,7 +5,6 @@ export const writeToLocalStorage = (data: Result) => {
   if (ls) {
     const array = []
     array.push(...JSON.parse(ls))
-    console.log(array)
     array.push(data)
     localStorage.setItem('bmi', JSON.stringify(array))
   } else {

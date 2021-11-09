@@ -79,8 +79,6 @@ const Results = styled.div`
 const MyResults = () => {
   const [data, setData] = useState<Result[]>([])
 
-  console.log(data)
-
   useEffect(() => {
     setData(getResultsFromLocalStorage())
   }, [])
