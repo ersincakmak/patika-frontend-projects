@@ -1,11 +1,12 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components'
 
 const darkTheme: DefaultTheme = {
-  title: "dark",
+  title: 'dark',
   colors: {
-    background: "#191A19",
-    text: "#FEF5ED",
+    background: '#191A19',
+    card: '#2b2c2b',
+    text: '#FEF5ED',
   },
-};
+}
 
-export default darkTheme;
+export default darkTheme

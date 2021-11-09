@@ -1,11 +1,12 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components'
 
 const lightTheme: DefaultTheme = {
-  title: "light",
+  title: 'light',
   colors: {
-    background: "#FEF5ED",
-    text: "#252525",
+    background: '#fef5ed',
+    card: '#dcd4cd',
+    text: '#252525',
   },
-};
+}
 
-export default lightTheme;
+export default lightTheme

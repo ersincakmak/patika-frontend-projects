@@ -1,11 +1,12 @@
-import "styled-components";
+import 'styled-components'
 
-declare module "styled-components" {
+declare module 'styled-components' {
   export interface DefaultTheme {
-    title: "dark" | "light";
+    title: 'dark' | 'light'
     colors: {
-      background: string;
-      text: string;
-    };
+      background: string
+      text: string
+      card: string
+    }
   }
 }

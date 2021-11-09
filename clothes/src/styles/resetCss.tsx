@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export const ResetCss = createGlobalStyle`
     * {
@@ -10,11 +10,14 @@ export const ResetCss = createGlobalStyle`
         color: inherit;
         border: none;
         outline: none;
+        line-height: 1;
     }
 
     html,body{
-        font-family: sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         color: ${(props) => props.theme.colors.text};
+        transition: color .2s ease;
     }
 
     .App{
@@ -24,5 +27,6 @@ export const ResetCss = createGlobalStyle`
         overflow: hidden;
         flex-direction: column;
         background-color: ${(props) => props.theme.colors.background};
+        transition: background .2s ease;
     }
-`;
+`
