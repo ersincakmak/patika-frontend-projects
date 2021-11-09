@@ -6,13 +6,21 @@ const FlipCard = styled.div`
   width: 2.5rem;
   height: 2.5rem;
   perspective: 1000px;
+  border: 2px solid ${(props) => props.theme.colors.text};
+  transition: ${(props) => props.theme.transition};
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
   .switcher {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 2rem;
+    height: 2rem;
     text-align: center;
-    transition: transform 0.6s;
+    transition: ${(props) => props.theme.transition};
     transform-style: preserve-3d;
     display: flex;
     align-items: center;
@@ -28,18 +36,16 @@ const FlipCard = styled.div`
   .switcher__front,
   .switcher__back {
     position: absolute;
-    width: max-content;
-    height: max-content;
+    width: 100%;
+    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease;
-    cursor: pointer;
+    transition: ${(props) => props.theme.transition};
     font-size: 1.5rem;
-    border: 1px solid ${(props) => props.theme.colors.text};
-    padding: 0.3em;
+    padding: 0.2em;
     border-radius: 50%;
   }
 

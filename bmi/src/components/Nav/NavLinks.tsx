@@ -71,7 +71,7 @@ const NavItems = styled.div<{
       &__item {
         width: 100%;
         padding: 0.5em 0.7em;
-        transition: all 0.2s ease;
+        transition: ${(props) => props.theme.transition};
         user-select: none;
         :hover {
           background-color: ${(props) => props.theme.colors.brand};

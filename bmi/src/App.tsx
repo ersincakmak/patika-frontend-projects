@@ -6,6 +6,7 @@ import { useTheme } from './themes'
 import { ThemeProvider } from 'styled-components'
 import dark from './themes/dark'
 import light from './themes/light'
+import WhatIsBmi from './pages/WhatIsBmi'
 
 const App = () => {
   const [theme, setTheme] = useTheme()
@@ -20,6 +21,7 @@ const App = () => {
           />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/whatisthebmi" element={<WhatIsBmi />} />
           </Routes>
         </BrowserRouter>
       </div>

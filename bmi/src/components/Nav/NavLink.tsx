@@ -12,7 +12,7 @@ export const NLink = styled.button`
   border-radius: 0.3125rem; // 5px
   font-size: 1rem; // 16px
   line-height: 1;
-  transition: all 0.2s ease;
+  transition: ${(props) => props.theme.transition};
   user-select: none;
 
   :hover {
