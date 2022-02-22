@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { transition } from '../../contants/style'
 
-const LinkContainer = styled.span`
+const LinkContainer = styled(Link)`
   padding: 0.5em 0.8em;
   border-radius: 5px;
   background-color: ${(props) => props.theme.colors.background};
@@ -21,11 +21,7 @@ interface Props {
 }
 
 const NavLink: React.FC<Props> = ({ href, label }) => {
-  return (
-    <LinkContainer>
-      <Link to={href}>{label}</Link>
-    </LinkContainer>
-  )
+  return <LinkContainer to={href}>{label}</LinkContainer>
 }
 
 export default NavLink
