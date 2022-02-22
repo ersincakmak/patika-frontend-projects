@@ -1,7 +1,7 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import routes from '../../contants/routes'
-import { transition } from '../../contants/style'
 import Container from '../Container'
 import ThemeSwithcer from '../ThemeSwithcer'
 import NavLink from './NavLink'
@@ -11,7 +11,6 @@ const NavContainer = styled.div`
   justify-content: center;
   padding: 1em;
   border-bottom: 2px solid ${(props) => props.theme.colors.card};
-  transition: ${transition};
 `
 
 const NavInner = styled.div`
@@ -30,6 +29,8 @@ const NavInner = styled.div`
 `
 
 const Logo = styled.h1`
+  user-select: none;
+  cursor: pointer;
   background: linear-gradient(to right, #2b5876, #4e4376);
   background-clip: text;
   -webkit-background-clip: text;
@@ -41,11 +42,17 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({ toggleTheme }) => {
+  const navigate = useNavigate()
+
+  const onLogoClickHandler = () => {
+    navigate('/')
+  }
+
   return (
     <NavContainer>
       <Container>
         <NavInner>
-          <Logo>SWEATISH</Logo>
+          <Logo onClick={onLogoClickHandler}>SWEATISH</Logo>
           <div className="right">
             {routes.map((item) => (
               <NavLink key={item.href} href={item.href} label={item.label} />

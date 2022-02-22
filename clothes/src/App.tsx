@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import Nav from './components/Nav'
-import { Basket, Detail, Favorites, Home } from './Pages/_export'
+import { Basket, Detail, Favorites, Home } from './Pages'
 import { ResetCss } from './styles/resetCss'
 import darkTheme from './themes/dark'
 import lightTheme from './themes/light'

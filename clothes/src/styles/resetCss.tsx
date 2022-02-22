@@ -11,13 +11,13 @@ export const ResetCss = createGlobalStyle`
         border: none;
         outline: none;
         line-height: 1;
+        font-family: inherit;
     }
 
     html,body{
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         color: ${(props) => props.theme.colors.text};
-        transition: color .2s ease;
     }
 
     .App{
