@@ -9,7 +9,7 @@ export const NotesContextProvider = (props) => {
       date: new Date('2022-03-08T12:00:00'),
       note: `# Hello, World!
 
-This is your first Angular Markdown note. You can:
+This is your first React Markdown note. You can:
 
 * Click/Focus to edit
 
@@ -17,9 +17,7 @@ This is your first Angular Markdown note. You can:
 
 * Add a new note  by clicking the plus sign above.
 
-* Delete this note
-
-Markdown compiled using the fantastic [angular-markdown-editable](http://projects.quiver.is/angular-markdown-editable/) directive.`,
+* Delete this note`,
     },
   ])
 
