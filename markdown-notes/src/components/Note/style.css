@@ -1,0 +1,78 @@
+.note {
+  width: 100%;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1);
+  margin-block: 1rem;
+}
+
+.note__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+.note__date {
+  font-style: italic;
+  color: rgb(0, 197, 197);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.note__content {
+  flex: 1;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1rem;
+}
+
+.note__content--editing {
+  border: 1px solid black;
+}
+
+.note__content textarea {
+  font-family: inherit;
+  font-size: 0.75rem; /* 12 px */
+  width: 100%;
+  min-height: 100%;
+  max-height: max-content;
+  resize: none;
+}
+
+.note__markdown {
+  pointer-events: none;
+}
+
+.note__buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.note__button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note__button--delete {
+  color: rgb(255, 0, 0);
+}
+
+.note__button--edit {
+  color: rgb(255, 102, 0);
+}
+
+.note__button--complete {
+  color: rgb(0, 194, 0);
+}
