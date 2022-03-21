@@ -53,6 +53,8 @@ const App = () => {
       timeout = setTimeout(() => {
         setShowLoading(true)
       }, 500)
+    } else {
+      setShowLoading(false)
     }
     return () => clearTimeout(timeout)
   }, [loading])
