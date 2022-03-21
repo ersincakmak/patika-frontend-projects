@@ -18,4 +18,4 @@ _npm run start_
 
 ![sc1](screenshot/Capture.png)
 
-![sc2](screenshot/Capture2.png)
+![sc2](screenshot/Capture2.PNG)
