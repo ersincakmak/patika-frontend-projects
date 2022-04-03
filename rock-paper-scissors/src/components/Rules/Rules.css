@@ -1,0 +1,80 @@
+.rules-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #3b4363;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+
+  /* 10px 25px */
+  padding: 0.625rem 1.5625rem;
+  border: 2px solid #3b4363;
+
+  /* 15px */
+  border-radius: 0.9375rem;
+  transition: all .2s ease;
+}
+
+@media screen and (min-width: 768px) {
+  .rules-button {
+    margin-left: auto;
+  }
+}
+
+.rules-button:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.rules-modal {
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1.5rem;
+}
+
+.rules-modal.open {
+  display: flex;
+}
+
+.rules-modal p {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #3b4363;
+}
+
+.rules-modal-close {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rules-modal {
+    inset: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    border-radius: 15px;
+  }
+
+  .rules-modal p {
+    font-size: 2rem;
+  }
+
+  .rules-modal-close {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+  }
+}

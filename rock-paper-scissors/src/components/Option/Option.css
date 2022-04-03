@@ -1,0 +1,87 @@
+.option {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 18px solid;
+  border-color: var(--border-color, #e6e6e6);
+  box-shadow: inset 0 5px 6px grey, 0 8px var(--shadow-color, #e6e6e6);
+  transition: transform 0.15s ease-in-out;
+}
+
+.option.selectable {
+  cursor: pointer;
+}
+
+.option.selectable:hover {
+  transform: scale(1.1);
+}
+
+.option-empty {
+  width: 142px;
+  height: 142px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  margin-block: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.option.winner {
+  box-shadow: inset 0 5px 6px grey,
+    0 8px var(--shadow-color, #e6e6e6),
+    0 0 0 2rem rgba(230, 230, 230, 0.07),
+    0 0 0 4.5rem rgba(230, 230, 230, 0.07),
+    0 0 0 7rem rgba(230, 230, 230, 0.07);
+}
+
+@media screen and (max-width: 768px) {
+  .option {
+    width: 140px;
+    height: 140px;
+  }
+
+  .option-empty {
+    width: 122px;
+    height: 122px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .option {
+    width: 130px;
+    height: 130px;
+  }
+
+  .option-empty {
+    width: 112px;
+    height: 112px;
+  }
+}
+
+.option img {
+  all: unset !important;
+  width: 40% !important;
+}
+
+.option[title="Rock"] {
+  --border-color: #dc2e4e;
+  --shadow-color: #a11b34;
+}
+
+.option[title="Paper"] {
+  --border-color: #4865f4;
+  --shadow-color: #0d31e3;
+}
+
+.option[title="Scissors"] {
+  --border-color: #ec9e0e;
+  --shadow-color: #a46e0a;
+}
