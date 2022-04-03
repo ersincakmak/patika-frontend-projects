@@ -2,7 +2,7 @@
 
 This app is a simple game of Rock, Paper, Scissors and it is a fully responsive web app.
 
-DEMO coming soon...
+[DEMO](https://rock-paper-scissors-ersincakmak.netlify.app/)
 
 ## Techs
 
