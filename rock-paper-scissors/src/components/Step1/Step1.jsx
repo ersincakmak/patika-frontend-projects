@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { options } from '../../constants/options';
 import { setUserPick } from '../../store/gameSlice';
 import Option from '../Option';
 import './Step1.css';
