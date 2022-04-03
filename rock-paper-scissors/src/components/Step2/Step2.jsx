@@ -41,7 +41,7 @@ const Step2 = () => {
     <div className="step2">
       <div className="step2-options">
         <div className="step2-option">
-          <Option name={userPick} winner={winner === 'user'} />
+          <Option name={userPick} winner={winner === 'user'} className="big" />
           <p>YOU PICKED</p>
         </div>
 
@@ -51,6 +51,7 @@ const Step2 = () => {
             wait={wait}
             waitText={waitText}
             winner={winner === 'computer'}
+            className="big"
           />
           <p>THE HOUSE PICKED</p>
         </div>
@@ -62,8 +63,8 @@ const Step2 = () => {
             {winner === 'draw'
               ? 'DRAW'
               : winner === 'user'
-              ? 'YOU WIN'
-              : 'YOU LOSE'}
+                ? 'YOU WIN'
+                : 'YOU LOSE'}
           </p>
           <button className="play-again" onClick={playAgainClick}>
             PLAY AGAIN
